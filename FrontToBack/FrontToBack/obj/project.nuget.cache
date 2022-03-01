@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rCiB/dgXXLQvdvXGn7dfnaxkgyUzKRhgRQfG2cNs7yNU15T8KQjqVOtfzmowD9mtC+IH7epGsNztXYpl3LICqA==",
+  "dgSpecHash": "wIHZ4CqZvyXcXvnzEbHVaPx90Wz1yAnhlM6xQBeD2o8CxmwivtFObP3d69VLFAiL4A/ViI2WgPHEWU8xLH0fxg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aytac\\Desktop\\adminPanel-Ajax-task\\FrontToBack\\FrontToBack\\FrontToBack.csproj",
+  "projectFilePath": "C:\\Users\\aytac\\Desktop\\adminPanel-User-Actions-Task\\FrontToBack\\FrontToBack\\FrontToBack.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aytac\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\aytac\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.14\\microsoft.aspnetcore.cryptography.internal.5.0.14.nupkg.sha512",

@@ -95,11 +95,12 @@ namespace FrontToBack.Areas.AdminPanel.Controllers
             
             if (existRole == null)
                 return BadRequest();
-         
+            var roles = await _roleManager.Roles.ToListAsync();
+            ViewBag.CurrentRole = existRole;
             if (existRole == role)
             {
                 ModelState.AddModelError("", "This is current Role");
-                return View();
+                return View(roles);
             }
             var removeResult = await _userManager.RemoveFromRoleAsync(user, existRole);
             if (!removeResult.Succeeded)
@@ -108,7 +109,7 @@ namespace FrontToBack.Areas.AdminPanel.Controllers
                 {
                     ModelState.AddModelError("", item.Description);
                 }
-                return View();
+                return View(roles);
             }
            
             var addResult = await _userManager.AddToRoleAsync(user, role);
@@ -118,7 +119,7 @@ namespace FrontToBack.Areas.AdminPanel.Controllers
                 {
                     ModelState.AddModelError("", item.Description);
                 }
-                return View();
+                return View(roles);
             }
 
             return RedirectToAction(nameof(Index));
